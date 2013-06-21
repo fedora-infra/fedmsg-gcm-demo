@@ -1,0 +1,8 @@
+api_key: "my api key"
+sender_id: "my sender id/project id"
+users:
+  - registration_id: "foo bar baz"
+    topics:
+      - git.receive
+      - bodhi.buildroot_override.tag
+      - wiki.article.edit
