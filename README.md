@@ -3,6 +3,8 @@
 This is a demo (NON-PRODUCTION) of what it's like to use fedmsg in conjunction
 with GCM (Google Cloud Messaging) for Android.
 
+**This is totally Proof of Concept, and not for production!**
+
 This uses Python, PyYAML and Requests to communicate with GCM over HTTP.
 
 There's a new way of communicating with GCM which uses XMPP, which we could
@@ -27,9 +29,9 @@ demo purposes, we handle this in a SQLite database manually.
 
 Open Fedora Mobile and select **Fedmsg GCM Demo** from the navdrawer. This will
 spawn a new Activity which will ask you for your **Sender ID** - Input that.
-Once that is done, it will give you a **Registration ID** back. You'll store
-this in the config. To do this, open `config.yaml` and add an element to the
-`users` array.
+Once that is done, it will give you a **Registration ID** back, in the form of
+a sprunge.us link. Go to the link and copy the string. You'll store this in the
+config. To do this, open `config.yaml` and add an element to the `users` array.
 
 It should contain `registration_id`, and an array called `topics` which are the
 topics you wish to subscribe the device to.
