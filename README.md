@@ -47,6 +47,21 @@ When
 [fedmsg-notifications](https://github.com/fedora-infra/fedmsg-notifications)
 exists, we'll have that flexibility, but this is just meant to be a quick demo.
 
+Once you've registered your device and added it to `config.yaml`, do the
+following:
+
+* **TODO: Make this not required** - Edit gcmconsumer.py to correct the path to
+  your YAML config.
+
+* Exceut the following commands:
+
+```bash
+sudo yum install fedmsg-hub
+sudo cp config.py /etc/fedmsg.d/gcmconsumer.py
+python setup.py egg_info
+PYTHONPATH=$(pwd) fedmsg-hub
+```
+
 # License
 
 This project is released under the Apache Software License version 2.0.
