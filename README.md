@@ -25,8 +25,6 @@ the `api_key` field. You'll also have a Sender ID. Put that under the
 In production, there would be a UI for registering devices. However, for our
 demo purposes, we handle this in a YAML file manually.
 
-**THIS DOES NOT WORK YET**
-
 Open Fedora Mobile and select **Fedmsg GCM Demo** from the navdrawer. This will
 spawn a new Activity which will ask you for your **Sender ID** - Input that.
 Once that is done, it will give you a **Registration ID** back, in the form of
