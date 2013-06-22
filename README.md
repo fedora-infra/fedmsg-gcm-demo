@@ -23,7 +23,7 @@ the `api_key` field. You'll also have a Sender ID. Put that under the
 # Registering devices
 
 In production, there would be a UI for registering devices. However, for our
-demo purposes, we handle this in a SQLite database manually.
+demo purposes, we handle this in a YAML file manually.
 
 **THIS DOES NOT WORK YET**
 
