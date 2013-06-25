@@ -44,7 +44,7 @@ class GCMConsumer(fedmsg.consumers.FedmsgConsumer):
             response = self._send_gcm(
                 {
                     'topic': msg.get('topic'),
-                    'msg': msg.get('msg')
+                    'msg': msg.get('body').get('msg')
                 },
                 [user])
             print response.text
