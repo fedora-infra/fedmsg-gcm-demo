@@ -1,5 +1,6 @@
 import fedmsg.consumers
 import json
+import pprint
 import requests
 import sys
 import yaml
@@ -42,11 +43,12 @@ class GCMConsumer(fedmsg.consumers.FedmsgConsumer):
             print "* SENDING MESSAGE TO USER: %s" % user
             response = self._send_gcm(
                 {
-                    'topic': msg['topic']
+                    'topic': msg.get('topic'),
+                    'msg': msg.get('msg')
                 },
                 [user])
             print response.text
             print response.status_code
             print response
 
-        print msg['topic']
+        pprint.pprint(msg)
